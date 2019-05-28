@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
@@ -37,6 +38,21 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(e2.getText().toString());
         int sum = num1 + num2;
         t1.setText(Integer.toString(sum)); //converting integer to sum
+
+        int num3 = Integer.parseInt(e1.getText().toString());
+        int num4 = Integer.parseInt(e2.getText().toString());
+        int divide= num3 / num4;
+        t1.setText(Integer.toString(divide));
+
+        int num5 = Integer.parseInt(e1.getText().toString());
+        int num6 = Integer.parseInt(e2.getText().toString());
+        int multiply = num5 * num6;
+        t1.setText(Integer.toString(multiply));
+
+        int num7 = Integer.parseInt(e1.getText().toString());
+        int num8 = Integer.parseInt(e1.getText().toString());
+        int subtract= num7 - num8;
+        t1.setText(Integer.toString(subtract));
     }
 
     @Override
